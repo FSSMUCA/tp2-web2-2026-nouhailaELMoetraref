@@ -1,4 +1,3 @@
-// exercice8.js
 
 let nom = "   Fatima   ";
 let age = "23";
@@ -8,34 +7,34 @@ let estAdmin = "false";
 let derniereConnexion = null;
 let nombreConnexions = "0";
 
-// 1️⃣ Nom
+//  Nom
 nom = nom.trim();
 if (nom === "") nom = "Inconnu";
 
-// 2️⃣ Age
+//  Age
 age = parseInt(age);
 let ageValide = (age > 0);
 
-// 3️⃣ Email
+//  Email
 let atPos = email.indexOf("@");
 let pointPos = email.indexOf(".", atPos);
 let emailValide = atPos !== -1 && pointPos > atPos;
 
-// 4️⃣ Score
+//  Score
 scoreJeu = parseInt(scoreJeu);
 if (isNaN(scoreJeu)) scoreJeu = 0;
 
-// 5️⃣ estAdmin
+//  estAdmin
 estAdmin = (estAdmin === "true"); // convertir la chaîne manuellement
 
-// 6️⃣ Dernière connexion
+// Dernière connexion
 derniereConnexion = derniereConnexion ?? "Jamais connecté";
 
-// 7️⃣ Nombre de connexions
+//  Nombre de connexions
 nombreConnexions = parseInt(nombreConnexions);
 if (nombreConnexions === 0) nombreConnexions = "Aucune connexion";
 
-// 8️⃣ Affichage du rapport
+//  Affichage du rapport
 console.log("===== RAPPORT UTILISATEUR =====");
 console.log("nom              : \"" + nom + "\" (corrigé : espaces supprimés)");
 console.log("age              : " + (ageValide ? age : "Invalide"));

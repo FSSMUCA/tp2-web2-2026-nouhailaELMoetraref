@@ -1,4 +1,4 @@
-// exercice3.js
+
 
 let r1 = 10 + 20;
 let r2 = "10" + 20;
